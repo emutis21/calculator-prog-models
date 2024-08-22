@@ -13,14 +13,14 @@ public class ConsoleInput implements InputMethod {
 
   @Override
   public double[] getInput() {
-    double[] inputs = new double[2];
+    System.out.println("Ingrese dos números separados por espacio:");
+    double num1 = scanner.nextDouble();
+    double num2 = scanner.nextDouble();
+    return new double[] { num1, num2 };
+  }
 
-    System.out.print("Ingrese el primer número: ");
-    inputs[0] = scanner.nextDouble();
-
-    System.out.print("Ingrese el segundo númeeeeero: ");
-    inputs[1] = scanner.nextDouble();
-
-    return inputs;
+  @Override
+  public void displayMessage(String message) {
+    System.out.println(message);
   }
 }

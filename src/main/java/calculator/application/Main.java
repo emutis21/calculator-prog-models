@@ -9,13 +9,13 @@ public class Main {
     Scanner scanner = new Scanner(System.in);
     InputMethod inputMethod = InputMethodSelector.selectInputMethod(scanner);
 
-    double[] inputs = inputMethod.getInput();
-
-    if (inputMethod == null || inputs == null) {
+    if (inputMethod == null) {
       System.out.println("Opción no válida. Saliendo del programa.");
       System.exit(1);
     }
 
+    double[] inputs = inputMethod.getInput();
+    inputMethod.displayMessage("Calculando...");
     CalculatorExecutor.performCalculations(inputs);
   }
 }
