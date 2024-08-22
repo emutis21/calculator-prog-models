@@ -1,9 +1,9 @@
 package calculator.application;
 
 import calculator.infrastructure.InputMethod;
-import calculator.infrastructure.InputMethodFactory;
-import calculator.infrastructure.input.ConsoleInputFactory;
-import calculator.infrastructure.input.GUIInputFactory;
+import calculator.infrastructure.input.factories.ConsoleInputFactory;
+import calculator.infrastructure.input.factories.GUIInputFactory;
+import calculator.infrastructure.input.factories.InputMethodFactory;
 import java.util.Scanner;
 
 public class InputMethodSelector {

@@ -1,7 +1,7 @@
-package calculator.infrastructure.input;
+package calculator.infrastructure.input.factories;
 
 import calculator.infrastructure.InputMethod;
-import calculator.infrastructure.InputMethodFactory;
+import calculator.infrastructure.input.GUIInput;
 import calculator.view.ViewApplication;
 
 public class GUIInputFactory implements InputMethodFactory {

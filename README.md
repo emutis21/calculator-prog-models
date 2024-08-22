@@ -3,7 +3,8 @@
 ## Estructura del Proyecto
 
 El proyecto está organizado de la siguiente manera:
-```plaintext
+
+```plaintext {"id":"01J5XQGX3FG0K5M6YYBVY0JRCC"}
 src/
     main/
         java/
@@ -22,8 +23,18 @@ src/
                 infrastructure/
                     input/
                         ConsoleInput.java
-                        FileInput.java
-                        ImageInput.java
+                        GUIInput.java
+                        factories/
+                            ConsoleInputFactory.java
+                            GUIInputFactory.java
+                            InputMethodFactory.java
+                    InputMethod.java
+                view/
+                    ViewApplication.java
+                    ViewApplication.form
+        resources/
+    test/
+        java/
 
 ```
 

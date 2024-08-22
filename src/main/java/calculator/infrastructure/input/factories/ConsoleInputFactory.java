@@ -1,7 +1,7 @@
-package calculator.infrastructure.input;
+package calculator.infrastructure.input.factories;
 
 import calculator.infrastructure.InputMethod;
-import calculator.infrastructure.InputMethodFactory;
+import calculator.infrastructure.input.ConsoleInput;
 import java.util.Scanner;
 
 public class ConsoleInputFactory implements InputMethodFactory {
